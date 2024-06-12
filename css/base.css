@@ -11,15 +11,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
-
 .js .loading::before,
 .js .loading::after{
 	content: '';
 	position: fixed;
 	z-index: 1000;
 }
-
 .js .loading::before {
 	top: 0;
 	left: 0;
@@ -27,7 +24,6 @@ body {
 	height: 100%;
 	background: var(--color-bg);
 }
-
 .js .loading::after {
 	top: 50%;
 	left: 50%;
@@ -38,7 +34,6 @@ body {
 	opacity: 0.4;
 	background: var(--color-link);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
-
 }
 
 
