@@ -13,7 +13,6 @@ let snakeArr = [
 
 food = {x: 6, y: 7};
 
-
 function main(ctime) {
     window.requestAnimationFrame(main);
     
@@ -97,8 +96,6 @@ function gameEngine(){
 
 
 }
-
-
 
 musicSound.play();
 let hiscore = localStorage.getItem("hiscore");
