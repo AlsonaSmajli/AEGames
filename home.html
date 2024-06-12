@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE games</title>
+     
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <!--  font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/stylee.css">
+   
+    
+</head>
+<script src="js/pixi.min.js"></script>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo">AE games</a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#review">Review</a>
+        <a href="#services">Games</a>
+        
+        
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>"Play, Relax, Repeat"</h3>
+        <p>Escape into instant fun and relaxation with our simple games. Play, relax, repeat for endless enjoyment!</p>
+        <!-- <a href="#services" class="btn">Play</a> -->
+    </div>
+
+    <div class="image">
+       
+        <img src="images/home.png" alt="">
+        
+        
+
+    </div>
+
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>games</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/tictoe.jpeg" alt="">
+            <h3>Tic Tac Toe</h3>
+            <p>Our Tic Tac Toe game brings timeless fun to your fingertips with sleek graphics. </p>
+            <a href="tic-tac-toe/index.html" class="btn">Play</a>
+        </div>
+
+        <div class="box">
+            <img src="images/snake.jpeg" alt="">
+            <h3>Snake game</h3>
+            <p>Ssslide into Snake's addictive gameplay. Eat, grow, conquer! Play now!</p>
+            <a href="Snakegame/index.html" class="btn">Play</a>
+        </div>
+
+        <div class="box">
+            <img src="images/memory.png" alt="">
+            <h3>Memory Game</h3>
+            <p>Get ready to test your memory and have a blast with our exciting Memory Game! </p>
+            <a href="MemoryGame/index.html" class="btn">Play</a>
+        </div>
+
+
+        
+    </div>
+    <a href="commingsoon.html" class="btn">Comming soon games!</a>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+    
+    <h1 class="heading"> <span>about</span> us </h1>
+
+   
+    <div class="row">
+
+        <div class="content">
+            
+            <div class="icons-container">
+                <div class="aboout">
+                    <h3 class="title">Welcome to our game collection!</h3>
+                    
+                    <p>We strive to create enjoyable and accessible games that provide instant fun and relaxation. Join our community of players, share your high scores, and compete for the top spot. Stay tuned for future updates and additional games to expand your gaming repertoire. We value your feedback and are committed to delivering the best gaming experience possible. If you have any questions, suggestions, or need support, feel free to reach out to us. Thank you for choosing our games, and we hope you have an amazing time playing, relaxing, and repeating the fun!</p>
+                
+            
+                    <section class="portfolio" id="portfolio">
+                    <div class="box-container">
+
+                        <div class="box">
+                        
+                            <img src="images/tictoe.jpeg" alt="">
+                            <div class="content">
+                                <h3>Tic-Tac-Toe</h3>
+                                
+                            </div>
+                        </div>
+                
+                        <div class="box">
+                          
+                            <img src="images/snake.jpeg" alt="">
+                            <div class="content">
+                                <h3>Snake</h3>
+                               
+                            </div>
+                        </div>
+                
+                        <div class="box">
+                            
+                            <img src="images/memory.png" alt="">
+                            <div class="content">
+                                <h3>Memory Game</h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                    
+                  </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="pricing" id="pricing">
+   
+    <h1 class="heading"> How to play our <span>games!</span> </h1>
+
+    <div class="box-container">
+
+        <section id="videos">
+            <video id="slider" autoplay muted loop>
+                <source src="video/video1.mp4" type="video/mp4">
+            </video>
+            <ul class="navigation">
+                <li onclick="videoselector('video/video1.mp4')"><img src="images/tictoe.jpeg" height="100px" width="150px"></li>
+                <li onclick="videoselector('video/video2.mp4')"><img src="images/snake.jpeg" height="100px" width="150px"></li>
+                <li onclick="videoselector('video/video3.mp4')"><img src="images/memory.png" height="100px" width="150px"></li>
+            </ul>
+        </section>
+        <script type="text/javascript">
+            function videoselector (videoLink) {
+                document.getElementById('slider').src=videoLink;
+            }
+        </script>
+
+    </div>
+   
+      
+  
+      
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- reivew section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> client's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="user">
+                <img src="images/pic-1.png" alt="">
+                <div class="info">
+                    <h3>Edona Cadraku</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <p>AE Games consistently delivers exceptional gaming experiences that captivate players with their immersive worlds and top-notch quality. From stunning graphics to intuitive controls, their attention to detail is evident in every aspect of their games. Whether it's action, adventure, or strategy, AE Games offers a diverse range of titles that cater to different preferences</p>
+            
+        </div>
+
+        <div class="box">
+            <div class="user">
+                <img src="images/pic-2.png" alt="">
+                <div class="info">
+                    <h3>Fatlinda Berisha</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <p>The game page they created is absolutely fantastic! The design is visually stunning, and the user interface is incredibly intuitive. It loads quickly and provides a seamless gaming experience. Our players have praised the engaging gameplay and smooth performance. </p>
+            
+        </div>
+
+        <div class="box">
+            <div class="user">
+                <img src="images/pic-3.png" alt="">
+                <div class="info">
+                    <h3>Alsona Smajli</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <i class="fas fa-quote-right"></i>
+            </div>
+            <p>I've played memories games from AE Games, and they consistently deliver exceptional quality. The attention to detail, engaging storylines, and smooth mechanics make for a truly enjoyable gaming experience.</p>
+            
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+        <section class="contact" id="contact">
+
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>our number</h3>
+                <p>+123-456-7890</p>
+              
+            </div>
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>our email</h3>
+                <p>aegames@gmail.com</p>
+               
+            </div>
+            <div class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>our location</h3>
+                <p>Prishtine, Bill Klinton</p>
+            </div>
+        </div>
+    </section>
+
+    </div>
+
+    
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../css/stylee.css" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://pixijs.download/v5.3.3/pixi.min.js"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      /* overflow: hidden; Ensure no scrollbars */
+    }
+    #background-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      z-index: -1; /* Ensure the canvas is behind other elements */
+    }
+    .header, .main, .center {
+      position: relative;
+      z-index: 1; /* Ensure game elements are above the canvas */
+    }
+    .center {
+      text-align: center; /* Ensure the button is centered */
+    }
+    .restart-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+ 
+  </style>
+</head>
+<body>
+  <div id="background-container"></div>
+
+  <header class="header">
+    <a href="#" class="logo">AE games</a>
+    <nav class="navbar">
+      <a href="../home.html">home</a>
+      <a href="../home.html">about</a>
+      <a href="../home.html">Review</a>
+      <a href="../home.html">Games</a>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </header>
+
+  <main class="mainn">
+    <div class="message" id="message">Player X's turn</div>
+    <div class="gameboard">
+      <div class="field" data-index="0"></div>
+      <div class="field" data-index="1"></div>
+      <div class="field" data-index="2"></div>
+      <div class="field" data-index="3"></div>
+      <div class="field" data-index="4"></div>
+      <div class="field" data-index="5"></div>
+      <div class="field" data-index="6"></div>
+      <div class="field" data-index="7"></div>
+      <div class="field" data-index="8"></div>
+    </div>
+    <div class="center">
+      <button class="restart-button " id="restart-button">Restart</button>
+    </div>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
