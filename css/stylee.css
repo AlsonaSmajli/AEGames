@@ -212,7 +212,7 @@ section{
 }
 
 .aboout {
-    /* max-width: 1400px; */
+   
     margin: 0 auto;
     padding: 30px;
     text-align: center;
@@ -292,13 +292,13 @@ section{
 
 .portfolio .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Adjusted column width */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); 
     gap: 4rem;
   }
 
 .portfolio .box-container .box{
-    height: 40rem; /* Increased height */
-    width: 30rem; /* Increased width */
+    height: 40rem; 
+    width: 30rem; 
    
     border-radius: .5rem;
     overflow:hidden;

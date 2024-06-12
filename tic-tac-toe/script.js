@@ -1,6 +1,6 @@
 "use strict";
 
-// PIXI setup
+
 const app = new PIXI.Application({
   width: window.innerWidth,
   height: window.innerHeight,
@@ -12,17 +12,17 @@ document.getElementById("background-container").appendChild(app.view);
 const graphicsContainer = new PIXI.Container();
 app.stage.addChild(graphicsContainer);
 
-// Function to create a pink star
+
 const createStar = (x, y) => {
   const star = new PIXI.Graphics();
-  star.beginFill(0xff69b4); // Pink color
-  star.drawStar(0, 0, 5, 10); // Smaller star for a background effect
+  star.beginFill(0xff69b4); 
+  star.drawStar(0, 0, 5, 10); 
   star.endFill();
   star.x = x;
   star.y = y;
   graphicsContainer.addChild(star);
 
-  // Animation to move the stars
+ 
   app.ticker.add(() => {
     star.y += 0.5;
     if (star.y > app.screen.height) {
@@ -31,21 +31,21 @@ const createStar = (x, y) => {
   });
 };
 
-// Function to create multiple stars
+
 const createStarField = () => {
-  for (let i = 0; i < 100; i++) { // Adjust the number of stars as needed
+  for (let i = 0; i < 100; i++) { 
     const x = Math.random() * app.screen.width;
     const y = Math.random() * app.screen.height;
     createStar(x, y);
   }
 };
 
-// Function to clear the star field
+
 const clearStarField = () => {
   graphicsContainer.removeChildren();
 };
 
-// Game setup
+
 const Player = (sign) => {
   this.sign = sign;
 
@@ -73,7 +73,7 @@ const gameBoard = (() => {
     for (let i = 0; i < board.length; i++) {
       board[i] = "";
     }
-    clearStarField(); // Clear stars on reset
+    clearStarField(); 
   };
 
   return { setField, getField, reset };
@@ -113,9 +113,9 @@ const displayController = (() => {
     } else {
       messageElement.textContent = `Player ${winner} has won!`;
       messageElement.classList.add("player-winner");
-      createStarField(); // Trigger star field animation on win
+      createStarField(); 
     }
-    restartButton.classList.remove("hidden"); // Show the button on game over
+    restartButton.classList.remove("hidden");
   };
 
   const setMessageElement = (message) => {
